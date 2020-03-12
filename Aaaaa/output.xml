@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.3 on win32)" generated="20200311 15:40:34.383" rpa="false">
+<suite id="s1" name="Aaaaa" source="C:\Users\Igy1\eclipse-workspace\Aaaaa">
+<suite id="s1-s1" name="Folder" source="C:\Users\Igy1\eclipse-workspace\Aaaaa\Folder">
+<suite id="s1-s1-s1" name="Robotsuite" source="C:\Users\Igy1\eclipse-workspace\Aaaaa\Folder\Robotsuite.robot">
+<test id="s1-s1-s1-t1" name="Open fmfp">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${URL_FMFP}</arg>
+<arg>${NAVIGATEUR}</arg>
+</arguments>
+<msg timestamp="20200311 15:40:35.926" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/fmfp/auth'.</msg>
+<status status="PASS" starttime="20200311 15:40:35.925" endtime="20200311 15:40:59.501"></status>
+</kw>
+<kw name="Nom utilisateur">
+<arguments>
+<arg>admin</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=email_input</arg>
+<arg>${nom_utilisateur}</arg>
+</arguments>
+<msg timestamp="20200311 15:40:59.511" level="INFO">Typing text 'admin' into text field 'id=email_input'.</msg>
+<status status="PASS" starttime="20200311 15:40:59.510" endtime="20200311 15:40:59.640"></status>
+</kw>
+<status status="PASS" starttime="20200311 15:40:59.502" endtime="20200311 15:40:59.640"></status>
+</kw>
+<kw name="mot de passe">
+<arguments>
+<arg>Password123</arg>
+</arguments>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>${mot_passe}</arg>
+</arguments>
+<msg timestamp="20200311 15:40:59.643" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg timestamp="20200311 15:40:59.700" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20200311 15:40:59.789" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20200311 15:40:59.642" endtime="20200311 15:40:59.790"></status>
+</kw>
+<status status="PASS" starttime="20200311 15:40:59.641" endtime="20200311 15:40:59.790"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=btnConnexion</arg>
+</arguments>
+<msg timestamp="20200311 15:40:59.791" level="INFO">Clicking button 'id=btnConnexion'.</msg>
+<status status="PASS" starttime="20200311 15:40:59.790" endtime="20200311 15:41:29.744"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>href="http://localhost/fmfp/gestion_allocation/gestion_allocation"</arg>
+</arguments>
+<msg timestamp="20200311 15:41:29.747" level="INFO">Clicking link 'href="http://localhost/fmfp/gestion_allocation/gestion_allocation"'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200311 15:41:30.273" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200311 15:41:29.780" endtime="20200311 15:41:30.274"></status>
+</kw>
+<msg timestamp="20200311 15:41:30.478" level="FAIL">Link with locator 'href="http://localhost/fmfp/gestion_allocation/gestion_allocation"' not found.</msg>
+<status status="FAIL" starttime="20200311 15:41:29.745" endtime="20200311 15:41:30.479"></status>
+</kw>
+<status status="FAIL" starttime="20200311 15:40:35.924" endtime="20200311 15:41:30.480" critical="yes">Link with locator 'href="http://localhost/fmfp/gestion_allocation/gestion_allocation"' not found.</status>
+</test>
+<status status="FAIL" starttime="20200311 15:40:35.716" endtime="20200311 15:41:30.485"></status>
+</suite>
+<status status="FAIL" starttime="20200311 15:40:35.713" endtime="20200311 15:41:30.496"></status>
+</suite>
+<status status="FAIL" starttime="20200311 15:40:35.680" endtime="20200311 15:41:30.513"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Aaaaa">Aaaaa</stat>
+<stat pass="0" fail="1" id="s1-s1" name="Folder">Aaaaa.Folder</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="Robotsuite">Aaaaa.Folder.Robotsuite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200311 15:40:34.371" level="WARN">Collapsing consecutive whitespace during parsing is deprecated. Fix ' Open fmfp' in file 'C:\Users\Igy1\eclipse-workspace\Aaaaa\Folder\Robotsuite.robot' on line 20.</msg>
+</errors>
+</robot>
